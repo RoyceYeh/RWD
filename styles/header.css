@@ -1,0 +1,207 @@
+#control,
+#trade-control {
+  position: fixed;
+  z-index: -10;
+  opacity: 0;
+}
+
+header {
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 5;
+}
+
+header .row {
+  justify-content: space-between;
+}
+
+header .logo a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header .logo img {
+  width: 40px;
+  height: 60px;
+}
+
+header .logo p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+header .btn {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+header .btn .sign {
+  display: none;
+}
+
+header .login {
+  padding-left: 0.5rem;
+}
+
+header .login > a {
+  display: block;
+  border: none;
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 0.75rem;
+}
+
+header .control {
+  display: block;
+  width: 50px;
+  height: 50px;
+  /* position: absolute;
+    top: 0px;
+    right: 0px; */
+  color: #000;
+}
+
+header .control img {
+  height: 50px;
+  width: 100%;
+}
+
+.trade-control {
+  display: block;
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+header .menu {
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  top: -1200%;
+  right: 0;
+  transition: 1s ease;
+}
+
+header .menu li {
+  display: block;
+  color: gray;
+  width: 100%;
+  padding: 20px;
+  border-bottom: 0.1px solid var(--border-color);
+}
+
+header .menu li a {
+  text-decoration: none;
+  color: gray;
+}
+
+header .menu ul li .trade-control ul {
+  max-height: 0px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  position: absolute;
+  top: -100%;
+}
+
+#trade-control:checked ~ header .menu ul li ul {
+  position: static;
+  max-height: 500px;
+  transition: 1s ease;
+}
+
+#control:checked + header .menu {
+  top: 60px;
+}
+
+@media screen and (min-width: 576px) {
+  header .btn .sign {
+    display: inherit;
+  }
+
+  header .logo {
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .btn {
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header .control {
+    display: none;
+  }
+
+  header .logo {
+    flex-grow: 0;
+  }
+
+  header .row {
+    justify-content: space-between;
+  }
+
+  header .menu {
+    position: static;
+    transition: 0s;
+    width: auto;
+  }
+
+  header .menu ul {
+    display: flex;
+  }
+
+  header .menu li {
+    border: none;
+    margin: 10px;
+    width: auto;
+  }
+
+  header .menu li:hover {
+    color: var(--main-color);
+    cursor: pointer;
+  }
+
+  header .menu li a:hover {
+    color: var(--main-color);
+  }
+
+  header .btn {
+    order: 1;
+    padding-right: 0;
+  }
+
+  header .btn .sign {
+    color: gray;
+  }
+
+  header .btn a:hover {
+    color: var(--main-color);
+  }
+
+  header .menu ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 0.5px solid var(--border-color);
+  }
+  #trade-control:checked ~ header .menu ul li ul {
+    display: inherit;
+    position: absolute;
+    top: 30px;
+  }
+
+  header .menu .trade-control ul li {
+    border: none;
+    padding: 15px;
+    width: auto;
+    border-bottom: 0.1px solid var(--border-color);
+  }
+}
