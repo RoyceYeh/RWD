@@ -160,7 +160,7 @@ header .menu ul li .trade-control ul {
 
   header .menu li {
     border: none;
-    margin: 10px;
+    padding: 10px;
     width: auto;
   }
 
@@ -203,5 +203,11 @@ header .menu ul li .trade-control ul {
     padding: 15px;
     width: auto;
     border-bottom: 0.1px solid var(--border-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header .menu li {
+    margin: 10px;
   }
 }
