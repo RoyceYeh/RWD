@@ -35,13 +35,13 @@ header .logo p {
   color: var(--main-color);
 }
 
-header .btn {
+header .btn_group {
   display: flex;
   align-items: center;
   font-size: 1rem;
 }
 
-header .btn .sign {
+header .btn_group .sign {
   display: none;
 }
 
@@ -83,7 +83,7 @@ header .menu {
   width: 100%;
   background: #fff;
   position: absolute;
-  top: -1200%;
+  top: -1000%;
   right: 0;
   transition: 1s ease;
 }
@@ -120,7 +120,7 @@ header .menu ul li .trade-control ul {
 }
 
 @media screen and (min-width: 576px) {
-  header .btn .sign {
+  header .btn_group .sign {
     display: inherit;
   }
 
@@ -130,7 +130,7 @@ header .menu ul li .trade-control ul {
 }
 
 @media screen and (min-width: 768px) {
-  header .btn {
+  header .btn_group {
     padding-right: 1rem;
   }
 }
@@ -156,6 +156,7 @@ header .menu ul li .trade-control ul {
 
   header .menu ul {
     display: flex;
+    align-items: center;
   }
 
   header .menu li {
@@ -173,16 +174,16 @@ header .menu ul li .trade-control ul {
     color: var(--main-color);
   }
 
-  header .btn {
+  header .btn_group {
     order: 1;
     padding-right: 0;
   }
 
-  header .btn .sign {
+  header .btn_group .sign {
     color: gray;
   }
 
-  header .btn a:hover {
+  header .btn_group a:hover {
     color: var(--main-color);
   }
 

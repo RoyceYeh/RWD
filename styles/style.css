@@ -85,10 +85,10 @@ td {
 
 .crypto_table table tr button {
   border: none;
-  padding: 0.75rem;
+  padding: 0.5rem;
   color: white;
   background-color: #098551;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -96,27 +96,8 @@ td {
   td {
     text-align: center;
   }
-}
-
-@media screen and (min-width: 992px) {
-  .crypto_table {
-    display: none;
-  }
-
-  .crypto_table_bg {
-    display: inherit;
-  }
-
-  .crypto_table_bg table tr th,
-  td {
-    text-align: center;
-  }
-
-  .crypto_table_bg table tr button {
-    border: none;
+  .crypto_table table tr button {
     padding: 0.75rem;
-    color: white;
-    background-color: #098551;
     font-size: 1rem;
   }
 }
@@ -267,48 +248,13 @@ section p {
     margin: 0 auto;
   }
 }
-
-/* footer */
-
-footer {
-  padding: 2.5rem;
-  background-color: var(--footer-color);
-}
-
-footer .logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  padding-bottom: 1rem;
-}
-
-footer .logo a {
-  font-size: 2rem;
-  color: var(--main-color);
-  font-weight: bold;
-}
-
-footer .list .company,
-.support,
-.business {
-  padding-bottom: 1rem;
-}
-
-footer ul li {
-  text-align: center;
-  padding: 0.25rem;
-}
-footer ul li:nth-child(1) {
-  font-weight: bold;
-  font-size: 1.15rem;
-  padding-bottom: 1rem;
-}
-@media screen and (min-width: 576px) {
-  footer .list {
-    display: flex;
+@media screen and (min-width: 992px) {
+  .mobile .system div + div + div {
+    display: block;
   }
-  footer ul li {
-    text-align: left;
+
+  .mobile .system {
+    flex-wrap: wrap;
+    align-items: center;
   }
 }

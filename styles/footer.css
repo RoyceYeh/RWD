@@ -1,0 +1,44 @@
+/* footer */
+
+footer {
+  padding: 2.5rem;
+  background-color: var(--footer-color);
+}
+
+footer .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+footer .logo a {
+  font-size: 2rem;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+footer .list .company,
+.support,
+.business {
+  padding-bottom: 1rem;
+}
+
+footer ul li {
+  text-align: center;
+  padding: 0.25rem;
+}
+footer ul li:nth-child(1) {
+  font-weight: bold;
+  font-size: 1.15rem;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  footer .list {
+    display: flex;
+  }
+  footer ul li {
+    text-align: left;
+  }
+}
