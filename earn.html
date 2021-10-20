@@ -17,69 +17,80 @@
     <link rel="stylesheet" href="styles/earn.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <nav class="row">
-          <div class="col-2 logo">
-            <a href="https://royceyeh.github.io/bitrillion/index"
-              ><img src="pic/logo.svg" alt="logo" />
-              <p>Bitrillion</p>
-            </a>
-          </div>
-          <div class="col-8 menu">
-            <ul>
-              <li>
-                <a href="https://royceyeh.github.io/bitrillion/buycrypto"
-                  >Buy Crypto</a
-                >
-              </li>
-              <li>
-                <a href="">Trade</a>
-                <ul>
-                  <li>
-                    <a href="https://royceyeh.github.io/bitrillion/lendingbot"
-                      >Lending Bot</a
-                    >
-                  </li>
-                  <li>
-                    <a href="https://royceyeh.github.io/bitrillion/earn"
-                      >Bitrillion Earn</a
-                    >
-                  </li>
-                  <li><a href="">Trading Bot</a></li>
-                  <li><a href="">Crypto Exchange</a></li>
-                </ul>
-              </li>
-
-              <li>
-                <a href="https://royceyeh.github.io/bitrillion/academy"
-                  >Academy</a
-                >
-              </li>
-              <li><a href="">Reseach</a></li>
-              <li>
-                <a href="https://royceyeh.github.io/bitrillion/community"
-                  >Community</a
-                >
-              </li>
-              <li>
-                <a href="https://royceyeh.github.io/bitrillion/whoweare"
-                  >Who we are</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-2 login">
-            <a href="">Login</a>
-            <button>Get started</button>
-          </div>
-        </nav>
-      </div>
-    </header>
-
     <div class="wrap">
-      <div class="banner">
+    <input type="checkbox" id="trade-control" />
+      <input type="checkbox" id="control" />
+      <header>
+        <div class="container">
+          <nav class="row aln-center">
+            <div class="logo">
+              <a href="https://royceyeh.github.io/RWD/"
+                ><img src="pic/logo.svg" alt="logo" />
+                <p>Bitrillion</p>
+              </a>
+            </div>
+            <div class="btn_group">
+              <a class="sign" href="#">
+                Login
+              </a>
+              <div class="login">
+                <a href=""">Get started</a>
+              </div>
+            </div>
+            <label for="control" class="control">
+              <img src="pic/menu_icon.svg" alt="" />
+            </label>
+            <div class="menu">
+              <ul>
+                <li>
+                  <a href="https://royceyeh.github.io/RWD/buycrypto"
+                    >Buy Crypto</a
+                  >
+                </li>
+                <li>
+                  <label class="trade-control" for="trade-control">
+                    Trade <span>▼</span>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://royceyeh.github.io/RWD/lendingbot"
+                          >Lending Bot</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://royceyeh.github.io/RWD/earn"
+                          >Bitrillion Earn</a
+                        >
+                      </li>
+                      <li><a href="">Trading Bot</a></li>
+                      <li><a href="">Crypto Exchange</a></li>
+                    </ul>
+                  </label>
+                </li>
+                <li>
+                  <a href="https://royceyeh.github.io/RWD/academy"
+                    >Academy</a
+                  >
+                </li>
+                <li><a href="">Reseach</a></li>
+                <li>
+                  <a href="https://royceyeh.github.io/RWD/community"
+                    >Community</a
+                  >
+                </li>
+                <li>
+                  <a href="https://royceyeh.github.io/RWD/whoweare"
+                    >Who we are</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+    
+      <section class="banner">
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-6 txt">
@@ -91,7 +102,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <div class="action">
         <div class="container">
@@ -107,18 +118,17 @@
             </div>
 
             <div class="map">
-              <ul class="row">
+              <ul>
                 <li>
                   <div class="num">
                     <div class="icon">①</div>
-                    <div class="line"></div>
+                    
                   </div>
                   <p>Sign up or log in on Bitfinex Lending Products page</p>
                 </li>
                 <li>
                   <div class="num">
                     <div class="icon">②</div>
-                    <div class="line"></div>
                   </div>
                   <p>Read and accept the “Notice and Consent”</p>
                 </li>
@@ -130,17 +140,14 @@
                 </li>
               </ul>
             </div>
-            <h3 class="col-12">Why lend and earn on Bitfinex</h3>
-            <div class="col-12 feature">
-              <div class="col-12 col-md-4">
+            <h3>Why you lend and earn on Bitrillion</h3>
+            <div class="feature">
+              <div>
                 <p>1.Flexible to meet your needs</p>
-              </div>
-              <div class="col-12 col-md-4">
                 <p>2.Wide cryptocurrency choices</p>
-              </div>
-              <div class="col-12 col-md-4">
                 <p>3.Easy payout</p>
               </div>
+                
             </div>
           </div>
         </div>
@@ -150,7 +157,7 @@
         <div class="container">
           <div class="row jc-center">
             
-              <div class="card col-12 col-sm-4 box">
+              <div class=" col-12 col-md-4 box">
                 <div class="name">
                   <div class="coin">
                     <img src="pic/crypto-icon/bitcoin-btc-logo.svg" alt="" />
@@ -161,7 +168,7 @@
                   </div>
                 </div>
                 <div class="rate">
-                  <div class="year"><p>7%</p></div>
+                  <div class="year"><p>Rate: 7%</p></div>
                   <div class="day"><p>14 days</p></div>
                 </div>
                 <div class="num">
@@ -190,7 +197,7 @@
                 </div>
                 
               </div>
-              <div class="card col-12 col-sm-4 box">
+              <div class=" col-12 col-md-4 box">
                 <div class="name">
                   <div class="coin">
                     <img src="pic/crypto-icon/bitcoin-btc-logo.svg" alt="" />
@@ -201,7 +208,7 @@
                   </div>
                 </div>
                 <div class="rate">
-                  <div class="year"><p>7%</p></div>
+                  <div class="year"><p>Rate: 7%</p></div>
                   <div class="day"><p>14 days</p></div>
                 </div>
                 <div class="num">
@@ -230,7 +237,7 @@
                 </div>
                 
               </div>
-              <div class="card col-12 col-sm-4 box">
+              <div class=" col-12 col-md-4 box">
                 <div class="name">
                   <div class="coin">
                     <img src="pic/crypto-icon/bitcoin-btc-logo.svg" alt="" />
@@ -241,7 +248,7 @@
                   </div>
                 </div>
                 <div class="rate">
-                  <div class="year"><p>7%</p></div>
+                  <div class="year"><p>Rate: 7%</p></div>
                   <div class="day"><p>14 days</p></div>
                 </div>
                 <div class="num">
@@ -270,7 +277,7 @@
                 </div>
                 
               </div>
-              <div class="card col-12 col-sm-4 box">
+              <div class=" col-12 col-md-4 box">
                 <div class="name">
                   <div class="coin">
                     <img src="pic/crypto-icon/bitcoin-btc-logo.svg" alt="" />
@@ -281,7 +288,7 @@
                   </div>
                 </div>
                 <div class="rate">
-                  <div class="year"><p>7%</p></div>
+                  <div class="year"><p>Rate: 7%</p></div>
                   <div class="day"><p>14 days</p></div>
                 </div>
                 <div class="num">
@@ -310,7 +317,7 @@
                 </div>
                 
               </div>
-              <div class="card col-12 col-sm-4 box">
+              <div class=" col-12 col-md-4 box">
                 <div class="name">
                   <div class="coin">
                     <img src="pic/crypto-icon/bitcoin-btc-logo.svg" alt="" />
@@ -321,7 +328,7 @@
                   </div>
                 </div>
                 <div class="rate">
-                  <div class="year"><p>7%</p></div>
+                  <div class="year"><p>Rate: 7%</p></div>
                   <div class="day"><p>14 days</p></div>
                 </div>
                 <div class="num">
@@ -350,7 +357,7 @@
                 </div>
                 
               </div>
-              <div class="card col-12 col-sm-4 box">
+              <div class="col-12 col-md-4 box">
                 <div class="name">
                   <div class="coin">
                     <img src="pic/crypto-icon/bitcoin-btc-logo.svg" alt="" />
@@ -361,7 +368,7 @@
                   </div>
                 </div>
                 <div class="rate">
-                  <div class="year"><p>7%</p></div>
+                  <div class="year"><p>Rate: 7%</p></div>
                   <div class="day"><p>14 days</p></div>
                 </div>
                 <div class="num">
@@ -395,36 +402,43 @@
         </div>
       </div>
 
-      <div class="counter">
+      <section class="counter">
         <div class="container">
           <div class="row">
             <div class="col-12">
               <h2>Calculate your potential rewards</h2>
             </div>
-            <div class="col-12 calculator">
-                <div class="row aln-center jc-center">
-                  <div class="col-12 col-md-1">
-                    <label>幣種</label>
-                    <select>
+            <div class="col-8 calculator">
+                  <div class="fill">
+                    <label>Coins</label>
+                    <div>
+                      <select>
                       <option value="USDT">USDT</option>
                       <option value="BTC">BTC</option>
                       <option value="ETH">ETH</option>
                       <option value="USDC">USDC</option>
                     </select>
+                    </div>
+                    
                   </div>
-                  <div class="col-12 col-md-2">
-                    <label for="input-amount" 
-                      >申購數量</label
-                    ><input
-                      id="input-amount"
+                  <div class="fill">
+                    <label for="amount" 
+                      >Amount</label
+                    >
+                    <div>
+                      <input
+                      id="amount"
                       type="number"
                       placeholder="輸入數量"
-                      value=""
-                    />
+                      value=""/>
+                    </div>
+                    
                   </div>
-                  <div class="col-12 col-md-1">
-                    <label>存續天期</label
-                    ><select>
+                  <div class="fill">
+                    <label>Days</label
+                    >
+                    <div>
+                      <select>
                       <option value="7">7天</option>
                       <option value="14">14天</option>
                       <option value="30">30天</option>
@@ -432,42 +446,42 @@
                       <option value="90">90天</option>
                       <option value="180">180天</option>
                     </select>
+                    </div>
+                    
                   </div>
-                  <div class="col-12 col-md-2">
-                    <label for="input-profit-rate"
-                      >年化報酬率</label
-                    >
-                    <div class="input-with-suffix">
+                  <div class="fill">
+                    <label for="IRR"
+                      >IRR</label>
+                    <div class="">
                       <input
-                      id="input-profit-rate"
+                      id="IRR"
                         type="string"
                         placeholder="年化報酬率"
                         value="0"
                       />
                     </div>
                   </div>
-                  <div class="col-12 col-md-3">
-                    <label for="input-profit" 
-                      >預期報酬</label
+                  <div class="fill">
+                    <label
+                      >Profit</label
                     >
                     <div>
                       <input
                         type="number"
                         placeholder="預期報酬"
-                        disabled=""
                         value=""
                       />
                     </div>
                   </div>
-                </div>
+                
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <div class="faq">
         <div class="container">
-          <div class="row-col col-12">
+          <div class="row-col col-8">
             <div class="row">
               <p>1. What happens to my funds on the day I subscribe to a Savings product?</p>
               <div class="arrow">▼</div>
