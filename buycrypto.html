@@ -91,7 +91,7 @@
     <main>
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-12 col-md-5 col-lg-4">
             <div class="sidebar">
               <table class="aside">
                 <thead>
@@ -106,15 +106,18 @@
               </table>
             </div>
           </div>
-          <div class="col-12 col-md-8">
+          <div class="col-12 col-md-7 col-lg-8">
             <div class="trade">
               <div class="crypto_form">
                 <div class="buybar">
                   <div class="logo">
-                    <img
+                    <div class="pic">
+                      <img
                       src="pic/crypto-icon/bitcoin_blockchain_icon.svg"
                       alt="logo"
                     />
+                    </div>
+                    
                     <p>Bitcoin</p>
                   </div>
                   <div class="btn">
@@ -125,7 +128,35 @@
 
                 <div class="chart">
                   <!-- TradingView Widget BEGIN -->
-                  <div class="tradingview-widget-container">
+<div class="tradingview-widget-container">
+  <div id="tradingview_90ec6"></div>
+  <div class="tradingview-widget-copyright"><a href="https://tw.tradingview.com/symbols/BTCUSD/?exchange=COINBASE" rel="noopener" target="_blank"><span class="blue-text">BTCUSD 圖表</span></a>由TradingView提供</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  'width': "100%",
+  'height': "60%",
+  "symbol": "COINBASE:BTCUSD",
+  "interval": "D",
+  "timezone": "Etc/UTC",
+  "theme": "light",
+  "style": "1",
+  "locale": "zh_TW",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "save_image": false,
+  "container_id": "tradingview_90ec6"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+
+
+                  <!-- TradingView Widget BEGIN -->
+                  <!-- <div class="tradingview-widget-container">
                     <div id="tradingview_ef0ee"></div>
                     <div class="tradingview-widget-copyright">
                       <a
@@ -157,11 +188,91 @@
                         container_id: "tradingview_ef0ee",
                       });
                     </script>
-                  </div>
+                  </div> -->
                   <!-- TradingView Widget END -->
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        
 
+        <div class="tab">
+          <div class="tab_css">
+            <input id="tab1" type="radio" name="tab" checked="checked" />
+            <label for="tab1"> Intro</label>
+            <div class="tab_content">
+              <h3>Lorem ipsum dolor</h3>
+              <p>
+                sit amet consectetur adipisicing elit. Labore amet assumenda
+                necessitatibus mollitia perferendis nam sequi ab pariatur
+                molestiae minima voluptates tempore aperiam ipsum ipsam illo sit
+                earum dolor, tempora aliquid totam! Veritatis, placeat. Animi
+                praesentium ipsam eius quisquam in nobis doloremque dolorem
+                deserunt, optio quo corrupti accusantium dolore! Rerum laborum
+                quo hic voluptatem maxime amet ipsum omnis inventore, ab
+                praesentium fugit iste voluptatibus quidem assumenda alias
+                dolor. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Provident, dolorum illo perferendis ipsa vero, vel repellat
+                molestiae architecto rem magni neque distinctio nemo?
+                Consequuntur accusantium ullam architecto dicta accusamus natus!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Blanditiis hic, perspiciatis velit, minima sapiente doloremque
+                eaque sit pariatur molestias voluptatibus repudiandae repellat
+                similique, alias et error illo! Vero eaque, officia voluptate
+                accusantium quae labore accusamus explicabo, perferendis fuga
+                inventore nulla rem aperiam nisi doloremque recusandae
+                consectetur! A deserunt distinctio eos hic tempora! Vero
+                voluptates quae minus dolorem repudiandae doloremque possimus.
+                Quae quo beatae aperiam dolorum accusamus accusantium? Excepturi
+                soluta quos, ab omnis ducimus numquam possimus sit mollitia quas
+                qui rem autem corporis adipisci assumenda deserunt veritatis
+                dignissimos ex neque, perspiciatis earum sunt nihil vel, eos
+                cumque! Architecto perferendis quae consectetur.
+              </p>
+            </div>
+
+            <input id="tab3" type="radio" name="tab" />
+            <label for="tab3">Analysis</label>
+            <div class="tab_content">
+              <!-- TradingView Widget BEGIN -->
+              <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <div class="tradingview-widget-copyright">
+                  <a
+                    href="https://www.tradingview.com/symbols/BTCUSD/technicals/"
+                    rel="noopener"
+                    target="_blank"
+                    ><span class="blue-text"
+                      >Technical Analysis for BTCUSD</span
+                    ></a
+                  >
+                  by TradingView
+                </div>
+                <script
+                  type="text/javascript"
+                  src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
+                  async
+                >
+                    {
+                    "interval": "1m",
+                    "width": "100%",
+                    "isTransparent": false,
+                    "height": "100%",
+                    "symbol": "COINBASE:BTCUSD",
+                    "showIntervalTabs": true,
+                    "locale": "en",
+                    "colorTheme": "light"
+                  }
+                </script>
+              </div>
+              <!-- TradingView Widget END -->
+            </div>
+
+
+      </div>
+
+            
 
 
     <script>
