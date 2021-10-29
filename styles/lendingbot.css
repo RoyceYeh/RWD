@@ -58,16 +58,17 @@ table tr th {
   border-bottom: 0.1px solid var(--border-color);
 }
 
-th,
+.left th,
 td {
   text-align: left;
   padding: 8px;
   border-bottom: 0.1px solid var(--border-color);
+  font-size: 1rem;
 }
 
-th,
+.right th,
 td {
-  font-size: 0.5rem;
+  font-size: 0.75rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -173,11 +174,6 @@ td {
   height: 30px;
 }
 
-.chart {
-  width: 100%;
-  max-height: 100%;
-}
-
 @media screen and (min-width: 768px) {
   .lending .ticker {
     max-height: 280px;
@@ -235,11 +231,19 @@ td {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 100%;
 }
 
 .order .confirm {
   display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .order .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+  }
 }
 
 /*-------------- right------------- */
