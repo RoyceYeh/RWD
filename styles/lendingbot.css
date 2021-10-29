@@ -1,0 +1,327 @@
+.container {
+  margin: 0 auto;
+  max-width: 90%;
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+
+.lending,
+.stats,
+.performance {
+  height: 300px;
+  max-height: 300px;
+  margin: 0.25rem;
+  background: rgb(250, 250, 250);
+}
+
+.history,
+.provided {
+  height: 300px;
+  max-height: 300px;
+}
+
+.order,
+.offers {
+  height: 150px;
+  max-height: 150px;
+  background: rgb(250, 250, 250);
+  margin: 0.25rem;
+}
+
+.content {
+  padding: 0.5rem;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  gap: 1rem;
+}
+.name p {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table tr th {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: rgb(250, 250, 250);
+  cursor: pointer;
+  border-bottom: 0.1px solid var(--border-color);
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 0.1px solid var(--border-color);
+}
+
+th,
+td {
+  font-size: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .lending,
+  .stats,
+  .performance {
+    height: 375px;
+    max-height: 375px;
+  }
+
+  .history,
+  .provided {
+    height: 375px;
+    max-height: 375px;
+  }
+
+  .order,
+  .offers {
+    height: 240px;
+    max-height: 240px;
+  }
+  th,
+  td {
+    padding: 4px;
+  }
+
+  th,
+  td {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .lending,
+  .stats,
+  .performance {
+    height: 400px;
+    max-height: 400px;
+  }
+
+  .history,
+  .provided {
+    height: 400px;
+    max-height: 400px;
+  }
+
+  .order,
+  .offers {
+    height: 300px;
+    max-height: 300px;
+  }
+  th,
+  td {
+    padding: 4px;
+  }
+
+  th,
+  td {
+    font-size: 1rem;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+}
+
+/* ----------------------left-------------------- */
+
+/* lending */
+
+.lending .name .btn {
+  display: inline-block;
+  background: var(--main-color);
+  color: #fff;
+  border: 0;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+  padding: 0.2rem 1rem;
+}
+
+.lending .search {
+  padding-top: 0.2rem;
+}
+
+.lending .search input {
+  width: 100%;
+  font-size: 1rem;
+  border: 0.25px solid var(--border-color);
+  background: #fff;
+}
+
+.lending .ticker {
+  max-height: 200px;
+  overflow: scroll;
+  overflow: scroll;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.lending .ticker td img {
+  width: 30px;
+  height: 30px;
+}
+
+.chart {
+  width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .lending .ticker {
+    max-height: 280px;
+  }
+
+  .lending .ticker td img {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .lending .ticker {
+    max-height: 310px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .lending .name .btn {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    padding: 0.2rem 0.5rem;
+  }
+}
+
+/* order */
+.order select {
+  padding: 0.2rem;
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.order input {
+  width: 90%;
+}
+
+.order .confirm input::placeholder {
+  font-size: 0.25rem;
+}
+
+.submit {
+  color: #fff;
+  background-color: #098551;
+  width: 80%;
+  border: none;
+  cursor: pointer;
+}
+
+.order label {
+  cursor: pointer;
+}
+.order .content {
+  height: 100%;
+}
+.order .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.order .confirm {
+  display: flex;
+}
+
+/*-------------- right------------- */
+
+/* performance */
+
+.performance .status {
+  max-height: 240px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .performance .status {
+    max-height: 320px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .performance .status {
+    max-height: 340px;
+  }
+}
+
+/* offer */
+
+.offers .status {
+  max-height: 100px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .offers .status {
+    max-height: 180px;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+}
+@media screen and (min-width: 992px) {
+  .offers .status {
+    max-height: 240px;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+}
+
+.right th,
+td {
+  font-size: 1x;
+}
+
+/* detail */
+
+.detail {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.detail .content {
+  height: 100%;
+}
+
+.detail .inner {
+  padding: 4px;
+  height: 100%;
+  background-color: rgb(250, 250, 250);
+}
+
+.detail .status {
+  max-height: 230px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .detail .status {
+    max-height: 300px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .detail .status {
+    max-height: 330px;
+  }
+}

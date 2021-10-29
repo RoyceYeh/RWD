@@ -27,8 +27,6 @@ svg {
   align-items: center;
 }
 
-/* Container */
-
 @media screen and (min-width: 576px) {
   section {
     padding: 4rem 0;
@@ -89,6 +87,8 @@ svg {
     font-size: 2.5rem;
   }
 }
+
+/* Container */
 
 .container {
   margin: 0 auto;

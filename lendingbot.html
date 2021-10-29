@@ -132,11 +132,12 @@
       </header>
 
     <main>
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-3">
+      <div class="container">
+        <div class="row">
+        <div class="col-12 col-lg-4 left">
           <div class="lending">
             <div class="content">
-              <div class="row name">
+              <div class="name">
                 <p>Lending</p>
                 <button class="btn">Automation Settings</button>
               </div>
@@ -148,9 +149,9 @@
                   <thead>
                     <tr>
                       <th>#</th>
-                      <th>Name ▼</th>
-                      <th>Rate ▼</th>
-                      <th>Vol($) ▼</th>
+                      <th>Name▼</th>
+                      <th>Rate▼</th>
+                      <th>Vol($)▼</th>
                     </tr>
                   </thead>
                   <tbody id="tbody">
@@ -254,9 +255,9 @@
           </div>
           <div class="order">
             <div class="content">
-              <div class="row name">
+              <div class="name">
                 <p>Order Form</p>
-                <select name="USD" id="">
+                <select name="USD">
                   <option value="">USD</option>
                   <option value="">BTC</option>
                   <option value="">ETH</option>
@@ -264,10 +265,10 @@
                 </select>
               </div>
               <div class="box">
-                <div class="row">
+                <div class="confirm">
                   <div class="col-6">
                     <form action="">
-                      <label for="">Rare Per Day(%)</label>
+                      <label for="">Rate Per Day(%)</label>
                       <input
                         class="text"
                         type="text"
@@ -286,7 +287,7 @@
                     </form>
                   </div>
                 </div>
-                <div class="row">
+                <div class="confirm">
                   <div class="col-6">
                     <form action="">
                       <label for="">Period</label>
@@ -312,68 +313,213 @@
           </div>
         </div>
 
-        <div class="col-12 col-sm-12 col-md-9 row-col">
+        <div class="col-12 col-lg-8 row-col right">
           <div class="col-12 performance">
             <div class="content">
-              <div class="row name">
+              <div class="name">
                 <p>Lending Performance</p>
               </div>
               <div class="status">
                 <table>
                   <tr>
-                    <th>Name ▼</th>
-                    <th>Balance ▼</th>
-                    <th>Rate ▼</th>
-                    <th>Earning ▼</th>
-                    <th>Utilised ▼</th>
+                    <th>Name▼</th>
+                    <th>Balance▼</th>
+                    <th>Rate▼</th>
+                    <th>Earning▼</th>
+                    <th>Utilised▼</th>
                   </tr>
                   <tr>
                     <td>BTC</td>
-                    <td>$ 5189412</td>
+                    <td>$5189412</td>
                     <td>2.42%</td>
-                    <td>$ 1697</td>
+                    <td>$1697</td>
                     <td>50%</td>
                   </tr>
                   <tr>
                     <td>ETH</td>
-                    <td>$ 58432</td>
+                    <td>$58432</td>
                     <td>0.32%</td>
-                    <td>$ 851</td>
+                    <td>$851</td>
                     <td>82%</td>
                   </tr>
                   <tr>
                     <td>USDT</td>
-                    <td>$ 5842</td>
+                    <td>$5842</td>
                     <td>52.45%</td>
-                    <td>$ 2851</td>
+                    <td>$2851</td>
                     <td>22%</td>
                   </tr>
                   <tr>
                     <td>USDC</td>
-                    <td>$ 851</td>
+                    <td>$851</td>
                     <td>8.49%</td>
-                    <td>$ 71</td>
+                    <td>$71</td>
                     <td>72%</td>
                   </tr>
                   <tr>
                     <td>FTT</td>
-                    <td>$ 1851</td>
+                    <td>$1851</td>
                     <td>12.27%</td>
-                    <td>$ 191</td>
+                    <td>$191</td>
                     <td>25%</td>
                   </tr>
                   <tr>
                     <td>BNB</td>
-                    <td>$ 5134</td>
+                    <td>$5134</td>
                     <td>10.42%</td>
-                    <td>$ 519</td>
+                    <td>$519</td>
                     <td>69%</td>
                   </tr>
                   <tr>
                     <td>SOL</td>
-                    <td>$ 519</td>
+                    <td>$519</td>
                     <td>50.42%</td>
-                    <td>$ 251</td>
+                    <td>$251</td>
+                    <td>48%</td>
+                  </tr>
+                  <tr>
+                    <td>BTC</td>
+                    <td>$5189412</td>
+                    <td>2.42%</td>
+                    <td>$1697</td>
+                    <td>50%</td>
+                  </tr>
+                  <tr>
+                    <td>ETH</td>
+                    <td>$58432</td>
+                    <td>0.32%</td>
+                    <td>$851</td>
+                    <td>82%</td>
+                  </tr>
+                  <tr>
+                    <td>USDT</td>
+                    <td>$5842</td>
+                    <td>52.45%</td>
+                    <td>$2851</td>
+                    <td>22%</td>
+                  </tr>
+                  <tr>
+                    <td>USDC</td>
+                    <td>$851</td>
+                    <td>8.49%</td>
+                    <td>$71</td>
+                    <td>72%</td>
+                  </tr>
+                  <tr>
+                    <td>FTT</td>
+                    <td>$1851</td>
+                    <td>12.27%</td>
+                    <td>$191</td>
+                    <td>25%</td>
+                  </tr>
+                  <tr>
+                    <td>BNB</td>
+                    <td>$5134</td>
+                    <td>10.42%</td>
+                    <td>$519</td>
+                    <td>69%</td>
+                  </tr>
+                  <tr>
+                    <td>SOL</td>
+                    <td>$519</td>
+                    <td>50.42%</td>
+                    <td>$251</td>
+                    <td>48%</td>
+                  </tr><tr>
+                    <td>BTC</td>
+                    <td>$5189412</td>
+                    <td>2.42%</td>
+                    <td>$1697</td>
+                    <td>50%</td>
+                  </tr>
+                  <tr>
+                    <td>ETH</td>
+                    <td>$58432</td>
+                    <td>0.32%</td>
+                    <td>$851</td>
+                    <td>82%</td>
+                  </tr>
+                  <tr>
+                    <td>USDT</td>
+                    <td>$5842</td>
+                    <td>52.45%</td>
+                    <td>$2851</td>
+                    <td>22%</td>
+                  </tr>
+                  <tr>
+                    <td>USDC</td>
+                    <td>$851</td>
+                    <td>8.49%</td>
+                    <td>$71</td>
+                    <td>72%</td>
+                  </tr>
+                  <tr>
+                    <td>FTT</td>
+                    <td>$1851</td>
+                    <td>12.27%</td>
+                    <td>$191</td>
+                    <td>25%</td>
+                  </tr>
+                  <tr>
+                    <td>BNB</td>
+                    <td>$5134</td>
+                    <td>10.42%</td>
+                    <td>$519</td>
+                    <td>69%</td>
+                  </tr>
+                  <tr>
+                    <td>SOL</td>
+                    <td>$519</td>
+                    <td>50.42%</td>
+                    <td>$251</td>
+                    <td>48%</td>
+                  </tr><tr>
+                    <td>BTC</td>
+                    <td>$5189412</td>
+                    <td>2.42%</td>
+                    <td>$1697</td>
+                    <td>50%</td>
+                  </tr>
+                  <tr>
+                    <td>ETH</td>
+                    <td>$58432</td>
+                    <td>0.32%</td>
+                    <td>$851</td>
+                    <td>82%</td>
+                  </tr>
+                  <tr>
+                    <td>USDT</td>
+                    <td>$5842</td>
+                    <td>52.45%</td>
+                    <td>$2851</td>
+                    <td>22%</td>
+                  </tr>
+                  <tr>
+                    <td>USDC</td>
+                    <td>$851</td>
+                    <td>8.49%</td>
+                    <td>$71</td>
+                    <td>72%</td>
+                  </tr>
+                  <tr>
+                    <td>FTT</td>
+                    <td>$1851</td>
+                    <td>12.27%</td>
+                    <td>$191</td>
+                    <td>25%</td>
+                  </tr>
+                  <tr>
+                    <td>BNB</td>
+                    <td>$5134</td>
+                    <td>10.42%</td>
+                    <td>$519</td>
+                    <td>69%</td>
+                  </tr>
+                  <tr>
+                    <td>SOL</td>
+                    <td>$519</td>
+                    <td>50.42%</td>
+                    <td>$251</td>
                     <td>48%</td>
                   </tr>
                 </table>
@@ -382,66 +528,192 @@
           </div>
           <div class="col-12 offers">
             <div class="content">
-              <div class="row name">
+              <div class="name">
                 <p>Open Offers</p>
               </div>
               <div class="status">
                 <table>
                   <tr>
-                    <th>Name ▼</th>
-                    <th>Balance ▼</th>
-                    <th>Rate ▼</th>
+                    <th>Name▼</th>
+                    <th>Balance▼</th>
+                    <th>Rate▼</th>
                     <th>Earning ▼</th>
                     <th>Utilised ▼</th>
                   </tr>
                   <tr>
                     <td>BTC</td>
-                    <td>$ 5189412</td>
+                    <td>$5189412</td>
                     <td>2.42%</td>
-                    <td>$ 1697</td>
+                    <td>$1697</td>
                     <td>50%</td>
                   </tr>
                   <tr>
                     <td>ETH</td>
-                    <td>$ 58432</td>
+                    <td>$58432</td>
                     <td>0.32%</td>
-                    <td>$ 851</td>
+                    <td>$951</td>
                     <td>82%</td>
                   </tr>
+                  <tr>
+                    <td>BTC</td>
+                    <td>$5189412</td>
+                    <td>2.42%</td>
+                    <td>$1697</td>
+                    <td>50%</td>
+                  </tr>
+                  <tr>
+                    <td>ETH</td>
+                    <td>$58432</td>
+                    <td>0.32%</td>
+                    <td>$951</td>
+                    <td>82%</td>
+                  </tr>
+                  <tr>
+                    <td>BTC</td>
+                    <td>$5189412</td>
+                    <td>2.42%</td>
+                    <td>$1697</td>
+                    <td>50%</td>
+                  </tr>
+                  <tr>
+                    <td>ETH</td>
+                    <td>$58432</td>
+                    <td>0.32%</td>
+                    <td>$951</td>
+                    <td>82%</td>
+                  </tr>
+                  <tr>
+                    <td>BTC</td>
+                    <td>$5189412</td>
+                    <td>2.42%</td>
+                    <td>$1697</td>
+                    <td>50%</td>
+                  </tr>
+                  <tr>
+                    <td>ETH</td>
+                    <td>$58432</td>
+                    <td>0.32%</td>
+                    <td>$951</td>
+                    <td>82%</td>
+                  </tr>
+                  
                 </table>
               </div>
             </div>
           </div>
-          <div class="col-12 row detail">
+          <div class="col-12 detail">
             <div class="col-12 col-lg-6 provided">
               <div class="content">
                 <div class="inner">
-                  <div class="row name">
+                  <div class="name">
                     <p>Provided Loans</p>
                   </div>
                   <div class="status">
                     <table>
                       <tr>
-                        <th>Name ▼</th>
-                        <th>Balance ▼</th>
-                        <th>Rate ▼</th>
-                        <th>Earning ▼</th>
-                        <th>Utilised ▼</th>
+                        <th>Name▼</th>
+                        <th>Balance▼</th>
+                        <th>Rate▼</th>
+                        <th>Earning▼</th>
+                        
                       </tr>
                       <tr>
                         <td>BTC</td>
-                        <td>$ 5189412</td>
+                        <td>$5189412</td>
                         <td>2.42%</td>
-                        <td>$ 1697</td>
-                        <td>50%</td>
+                        <td>$1697</td>
                       </tr>
                       <tr>
                         <td>ETH</td>
-                        <td>$ 58432</td>
+                        <td>$58432</td>
                         <td>0.32%</td>
-                        <td>$ 851</td>
-                        <td>82%</td>
+                        <td>$851</td>
                       </tr>
+                      <tr>
+                    <td>BTC</td>
+                    <td>$5189412</td>
+                    <td>2.42%</td>
+                    <td>$1697</td>
+                  </tr>
+                  <tr>
+                    <td>ETH</td>
+                    <td>$58432</td>
+                    <td>0.32%</td>
+                    <td>$951</td>
+                  </tr>
+                  
+                      <tr>
+                        <td>BTC</td>
+                        <td>$5189412</td>
+                        <td>2.42%</td>
+                        <td>$1697</td>
+                      </tr>
+                      <tr>
+                        <td>ETH</td>
+                        <td>$58432</td>
+                        <td>0.32%</td>
+                        <td>$851</td>
+                      </tr>
+                      <tr>
+                    <td>BTC</td>
+                    <td>$5189412</td>
+                    <td>2.42%</td>
+                    <td>$1697</td>
+                  </tr>
+                  <tr>
+                    <td>ETH</td>
+                    <td>$58432</td>
+                    <td>0.32%</td>
+                    <td>$951</td>
+                  </tr>
+                      <tr>
+                        <td>BTC</td>
+                        <td>$5189412</td>
+                        <td>2.42%</td>
+                        <td>$1697</td>
+                      </tr>
+                      <tr>
+                        <td>ETH</td>
+                        <td>$58432</td>
+                        <td>0.32%</td>
+                        <td>$851</td>
+                      </tr>
+                      <tr>
+                    <td>BTC</td>
+                    <td>$5189412</td>
+                    <td>2.42%</td>
+                    <td>$1697</td>
+                  </tr>
+                  <tr>
+                    <td>ETH</td>
+                    <td>$58432</td>
+                    <td>0.32%</td>
+                    <td>$951</td>
+                  </tr>
+                      <tr>
+                        <td>BTC</td>
+                        <td>$5189412</td>
+                        <td>2.42%</td>
+                        <td>$1697</td>
+                      </tr>
+                      <tr>
+                        <td>ETH</td>
+                        <td>$58432</td>
+                        <td>0.32%</td>
+                        <td>$851</td>
+                      </tr>
+                      <tr>
+                    <td>BTC</td>
+                    <td>$5189412</td>
+                    <td>2.42%</td>
+                    <td>$1697</td>
+                  </tr>
+                  <tr>
+                    <td>ETH</td>
+                    <td>$58432</td>
+                    <td>0.32%</td>
+                    <td>$951</td>
+                  </tr>
                     </table>
                   </div>
                 </div>
@@ -450,7 +722,7 @@
             <div class="col-12 col-lg-6 history">
               <div class="content">
                 <div class="inner">
-                  <div class="row name">
+                  <div class="name">
                     <p>Lending History</p>
                   </div>
                   <div class="status">
@@ -460,20 +732,101 @@
                         <th>Balance ▼</th>
                         <th>Rate ▼</th>
                         <th>Earning ▼</th>
-                        <th>Utilised ▼</th>
                       </tr>
                       <tr>
                         <td>BTC</td>
-                        <td>$ 5189412</td>
+                        <td>$5189412</td>
                         <td>2.42%</td>
-                        <td>$ 1697</td>
-                        <td>50%</td>
+                        <td>$1697</td>
                       </tr>
                       <tr>
                         <td>ETH</td>
-                        <td>$ 58432</td>
+                        <td>$58432</td>
                         <td>0.32%</td>
-                        <td>$ 851</td>
+                        <td>82%</td>
+                      </tr>
+                      <tr>
+                        <td>BTC</td>
+                        <td>$5189412</td>
+                        <td>2.42%</td>
+                        <td>$1697</td>
+                      </tr>
+                      <tr>
+                        <td>ETH</td>
+                        <td>$58432</td>
+                        <td>0.32%</td>
+                        <td>82%</td>
+                      </tr>
+                      <tr>
+                        <td>BTC</td>
+                        <td>$5189412</td>
+                        <td>2.42%</td>
+                        <td>$1697</td>
+                      </tr>
+                      <tr>
+                        <td>ETH</td>
+                        <td>$58432</td>
+                        <td>0.32%</td>
+                        <td>82%</td>
+                      </tr>
+                      <tr>
+                        <td>BTC</td>
+                        <td>$5189412</td>
+                        <td>2.42%</td>
+                        <td>$1697</td>
+                      </tr>
+                      <tr>
+                        <td>ETH</td>
+                        <td>$58432</td>
+                        <td>0.32%</td>
+                        <td>82%</td>
+                      </tr>
+                      <tr>
+                        <td>BTC</td>
+                        <td>$5189412</td>
+                        <td>2.42%</td>
+                        <td>$1697</td>
+                      </tr>
+                      <tr>
+                        <td>ETH</td>
+                        <td>$58432</td>
+                        <td>0.32%</td>
+                        <td>82%</td>
+                      </tr>
+                      <tr>
+                        <td>BTC</td>
+                        <td>$5189412</td>
+                        <td>2.42%</td>
+                        <td>$1697</td>
+                      </tr>
+                      <tr>
+                        <td>ETH</td>
+                        <td>$58432</td>
+                        <td>0.32%</td>
+                        <td>82%</td>
+                      </tr>
+                      <tr>
+                        <td>BTC</td>
+                        <td>$5189412</td>
+                        <td>2.42%</td>
+                        <td>$1697</td>
+                      </tr>
+                      <tr>
+                        <td>ETH</td>
+                        <td>$58432</td>
+                        <td>0.32%</td>
+                        <td>82%</td>
+                      </tr>
+                      <tr>
+                        <td>BTC</td>
+                        <td>$5189412</td>
+                        <td>2.42%</td>
+                        <td>$1697</td>
+                      </tr>
+                      <tr>
+                        <td>ETH</td>
+                        <td>$58432</td>
+                        <td>0.32%</td>
                         <td>82%</td>
                       </tr>
                     </table>
@@ -483,6 +836,7 @@
             </div>
           </div>
         </div>
+      </div>
       </div>
     </main>
 
