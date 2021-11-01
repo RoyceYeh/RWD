@@ -41,15 +41,15 @@ header .btn_group {
   font-size: 1rem;
 }
 
-header .btn_group .sign {
+header .btn_group .login {
   display: none;
 }
 
-header .login {
+header .started {
   padding-left: 0.5rem;
 }
 
-header .login > a {
+header .started > a {
   display: block;
   border: none;
   background-color: var(--main-color);
@@ -118,7 +118,7 @@ header .menu ul li .trade-control ul {
 }
 
 @media screen and (min-width: 576px) {
-  header .btn_group .sign {
+  header .btn_group .login {
     display: inherit;
   }
 
@@ -177,7 +177,7 @@ header .menu ul li .trade-control ul {
     padding-right: 0;
   }
 
-  header .btn_group .sign {
+  header .btn_group .login {
     color: gray;
   }
 
@@ -185,7 +185,7 @@ header .menu ul li .trade-control ul {
     color: var(--main-color);
   }
 
-  header .btn_group .login a:hover {
+  header .btn_group .started a:hover {
     color: #fff;
   }
 
