@@ -1,11 +1,3 @@
-.container {
-  margin: 0 auto;
-  max-width: 90%;
-  width: 100%;
-  padding-right: 0.75rem;
-  padding-left: 0.75rem;
-}
-
 .lending,
 .stats,
 .performance {
@@ -23,8 +15,8 @@
 
 .order,
 .offers {
-  height: 150px;
-  max-height: 150px;
+  height: 180px;
+  max-height: 180px;
   background: rgb(250, 250, 250);
   margin: 0.25rem;
 }
@@ -37,7 +29,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   gap: 1rem;
 }
 .name p {
@@ -69,6 +61,7 @@ td {
 .right th,
 td {
   font-size: 0.75rem;
+  text-align: left;
 }
 
 @media screen and (min-width: 768px) {
@@ -90,14 +83,22 @@ td {
     height: 240px;
     max-height: 240px;
   }
-  th,
+  .name p {
+    font-weight: bold;
+    font-size: 1.15rem;
+  }
+  .left th,
   td {
-    padding: 4px;
+    text-align: left;
+    padding: 8px;
+    border-bottom: 0.1px solid var(--border-color);
+    font-size: 1.15rem;
   }
 
-  th,
+  .right th,
   td {
-    font-size: 1rem;
+    font-size: 1.15rem;
+    text-align: left;
   }
 }
 
@@ -120,14 +121,19 @@ td {
     height: 300px;
     max-height: 300px;
   }
-  th,
+
+  .left th,
   td {
-    padding: 4px;
+    text-align: left;
+    padding: 8px;
+    border-bottom: 0.1px solid var(--border-color);
+    font-size: 1.25rem;
   }
 
-  th,
+  .right th,
   td {
     font-size: 1rem;
+    text-align: left;
   }
 
   label {
@@ -207,6 +213,7 @@ td {
 
 .order input {
   width: 90%;
+  padding: 0.5rem;
 }
 
 .order .confirm input::placeholder {
@@ -223,6 +230,7 @@ td {
 
 .order label {
   cursor: pointer;
+  font-size: 1rem;
 }
 .order .content {
   height: 100%;
@@ -243,6 +251,11 @@ td {
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
+  }
+
+  .order label {
+    cursor: pointer;
+    font-size: 1.25rem;
   }
 }
 
